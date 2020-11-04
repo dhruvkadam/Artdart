@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>First Website</title>
+</head>
+
+<style>
+	body{
+		background-image: url('Breaking-Bad.jpg');
+		background-size: cover;
+		padding: 0;
+		margin: 0;
+	}
+	*{box-sizing: border-box;}
+	header{
+		background-color: gray;
+		padding: 15px;
+		text-align: center;
+	}
+	.b1{
+		float: left;
+		width: 20%;
+	}
+	.b1 a{
+		background-color: gray;
+		padding: 15px;
+		width: 100%;
+		display: block;
+		margin-top: 6px;
+	}
+	.left{
+		width: 100%;
+		float: left;
+		padding: 10px;
+		margin-top: 7px;
+		background-color: gray;
+	}
+	section{
+		width: 60%;
+		float: left;
+		padding: 10px;
+	}
+	.right{
+		background-color: gray;
+		float: right;
+		width: 20%;
+		padding: 10px;
+		margin-top: : 6px;
+		@media (max-width: 620px)
+		{
+			.b1,section,.right{width: 100%}
+		}
+	}
+	p{
+		text-align: left;
+		padding: 5px;
+		color: white;
+		margin: 0;
+	}
+	aside{
+		float: left;
+		width: 10px;
+	}
+
+</style>
+<body>
+	<header>
+		<h1>My Responsive Site</h1>
+	</header>
+	<div>
+		<div class="b1">
+			<nav>
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+				
+			</nav>	
+				<aside class="left"><h1>About Us!</h1>
+					Say My Name-Dhruv<br>
+					
+				</aside>
+			
+		</div>
+		<section>
+			<picture>
+				<source srcset="" media="(max-width: 650px)">
+				<source srcset="" media="(max-width: 1500px)">
+				<img src="bbfel.jpg" alt="" style="width: 100%; height: 200px;">	
+			</picture>
+		<p>
+			Breaking Bad is an American neo-Western crime drama television series created and produced by Vince Gilligan. The show aired on AMC from January 20, 2008, to September 29, 2013, consisting of five seasons for a total of 62 episodes. It was set and filmed in Albuquerque, New Mexico, and tells the story of Walter White (Bryan Cranston), an underpaid and dispirited high school chemistry teacher who is struggling with a recent diagnosis of stage-three lung cancer. White turns to a life of crime, partnering with his former student Jesse Pinkman (Aaron Paul), by producing and distributing crystallized methamphetamine to secure his family's financial future before he dies, while navigating the dangers of the criminal underworld. The title is a Southern colloquialism meaning to turn to a life of crime.[8] Gilligan characterized the series as showing Walter's transformation from a soft-spoken Mr. Chips into Scarface.
+		</p>
+		</section>
+		 
+		<aside class="right"><h2>HEISENBERG</h2>
+			
+		</aside>
+	</div>
+</body>
+</html>
